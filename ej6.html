@@ -2,8 +2,40 @@
 <form action="https://www.w3schools.com/action_page.php" method="post">
 	<fieldset>
         <label for="nombre">Nombre y apellidos: </label>
-        <input name="nombre" id="nombre" type="text"><br>
+        <input name="nombre" id="nombre" type="text"><br><br>
 		<label for="email">Email: </label>
         <input id="email" name="email" type="email"><br><br>    
+        <label>Momento: </label>
+        <input name="momento" type="checkbox" value="Desayuno"> Desayuno
+        <input name="momento" type="checkbox" value="Almuerzo"> Almuerzo
+        <input name="momento" type="checkbox" value="Merienda"> Merienda
+        <input name="momento" type="checkbox" value="Cena"> Cena<br><br>
+        <select multiple name="Ingredientes" id="Ingredientes">
+        	<optgroup label="Pescado">
+  				<option value="pescado">a</option>
+  		 		<option value="pescado">b</option>
+  		 		<option value="pescado">c</option>
+  		 	</optgroup>
+         	<optgroup label="Carne">
+  				<option value="carne">Pollo</option>
+  		 		<option value="carne">Ternera</option>
+  		 		<option value="carne">Cerdo</option>
+  		 	</optgroup>
+         	<optgroup label="Verdura">
+  				<option value="verdura">1</option>
+  		 		<option value="verdura">2</option>
+  		 		<option value="verdura">3</option>
+  		 	</optgroup
+		</select><br><br>
+		<label>Tiempo(horas): </label>
+        <input name="horas" type="checkbox" value="0"> 0
+       	<input name="horas" type="checkbox" value="1"> 1
+       	<input name="horas" type="checkbox" value="2"> 2<br>
+        <label>Tiempo(minutos): </label>
+        <input name="minutos" type="checkbox" value="0"> 0
+       	<input name="minutos" type="checkbox" value="15"> 15
+       	<input name="minutos" type="checkbox" value="30"> 30
+       	<input name="minutos" type="checkbox" value="45"> 45<br><br>
+
     </fieldset>
 </form>

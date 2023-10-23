@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form action="https://www.w3schools.com/action_page.php" method="post">
+<form action="https://lm.ciclo.iesnervion.es/" method="post">
 	<fieldset>
         <label for="nombre">Nombre y apellidos: </label>
         <input name="nombre" id="nombre" type="text"><br><br>
 		<label for="email">Email: </label>
         <input id="email" name="email" type="email"><br><br>    
         <label>Momento: </label>
-        <input name="momento" type="checkbox" value="Desayuno"> Desayuno
-        <input name="momento" type="checkbox" value="Almuerzo"> Almuerzo
-        <input name="momento" type="checkbox" value="Merienda"> Merienda
-        <input name="momento" type="checkbox" value="Cena"> Cena<br><br>
+        <input name="momento[]" type="checkbox" value="Desayuno"> Desayuno
+        <input name="momento[]" type="checkbox" value="Almuerzo"> Almuerzo
+        <input name="momento[]" type="checkbox" value="Merienda"> Merienda
+        <input name="momento[]" type="checkbox" value="Cena"> Cena<br><br>
         <select multiple name="Ingredientes" id="Ingredientes">
         	<optgroup label="Pescado">
   				<option value="pescado">Atún</option>

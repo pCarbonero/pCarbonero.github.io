@@ -12,30 +12,38 @@
         <input name="momento[]" type="checkbox" value="Cena"> Cena<br><br>
         <select multiple name="Ingredientes" id="Ingredientes">
         	<optgroup label="Pescado">
-  				<option value="pescado">Atún</option>
-  		 		<option value="pescado">Mojarrita</option>
-  		 		<option value="pescado">Bacalao</option>
+  				<option value="pescado[]">Atún</option>
+  		 		<option value="pescado[]">Mojarrita</option>
+  		 		<option value="pescado[]">Bacalao</option>
   		 	</optgroup>
          	<optgroup label="Carne">
-  				<option value="carne">Pollo</option>
-  		 		<option value="carne">Ternera</option>
-  		 		<option value="carne">Cerdo</option>
+  				<option value="carne[]">Pollo</option>
+  		 		<option value="carne[]">Ternera</option>
+  		 		<option value="carne[]">Cerdo</option>
   		 	</optgroup>
          	<optgroup label="Verdura">
-  				<option value="verdura">Brocoli</option>
-  		 		<option value="verdura">Pimiento</option>
-  		 		<option value="verdura">Remolacha</option>
-  		 	</optgroup
+  				<option value="verdura[]">Brocoli</option>
+  		 		<option value="verdura[]">Pimiento</option>
+  		 		<option value="verdura[]">Remolacha</option>
+  		 	</optgroup>
 		</select><br><br>
 		<label>Tiempo(horas): </label>
-        <input name="horas" type="radio" value="0"> 0
-       	<input name="horas" type="radio" value="1"> 1
-       	<input name="horas" type="radio" value="2"> 2<br>
+        <input name="horas" type="radio" value="0">
+        	<label for="radio">0</label>
+       	<input name="horas" type="radio" value="1"> 
+       		<label for="radio">1</label>
+       	<input name="horas" type="radio" value="2"> 
+       		<label for="radio">2</label><br>
         <label>Tiempo(minutos): </label>
-        <input name="minutos" type="radio" value="0"> 0
-       	<input name="minutos" type="radio" value="15"> 15
-       	<input name="minutos" type="radio" value="30"> 30
-       	<input name="minutos" type="radio" value="45"> 45<br><br>
+        <input name="minutos" type="radio" value="0"> 
+        	<label for="radio">0</label>
+       	<input name="minutos" type="radio" value="15"> 
+       		<label for="radio">15</label>
+       	<input name="minutos" type="radio" value="30"> 
+       		<label for="radio">30</label>
+       	<input name="minutos" type="radio" value="45"> 
+       		<label for="radio">45</label> <br><br>
+
        	<input type="file" id="image" name="image"><br><br>
        	<input type="submit" name="enviar" value="Enviar">
     </fieldset>

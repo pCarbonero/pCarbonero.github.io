@@ -1,50 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<form action="https://lm.ciclo.iesnervion.es/" method="post">
-	<fieldset>
-        <label for="nombre">Nombre y apellidos: </label>
-        <input name="nombre" id="nombre" type="text"><br><br>
-		<label for="email">Email: </label>
-        <input id="email" name="correo" type="email"><br><br>    
-        <label>Momento: </label>
-        <input name="momento[]" type="checkbox" value="Desayuno"> Desayuno
-        <input name="momento[]" type="checkbox" value="Almuerzo"> Almuerzo
-        <input name="momento[]" type="checkbox" value="Merienda"> Merienda
-        <input name="momento[]" type="checkbox" value="Cena"> Cena<br><br>
-        <select multiple name="ingredientes" id="Ingredientes">
-        	<optgroup label="Pescado">
-  				<option>Atún</option>
-  		 		<option>Mojarrita</option>
-  		 		<option>Bacalao</option>
-  		 	</optgroup>
-         	<optgroup label="Carne">
-  				<option>Pollo</option>
-  		 		<option>Ternera</option>
-  		 		<option>Cerdo</option>
-  		 	</optgroup>
-         	<optgroup label="Verdura">
-  				<option>Brocoli</option>
-  		 		<option>Pimiento</option>
-  		 		<option>Remolacha</option>
-  		 	</optgroup>
-		</select><br><br>
-		<label>Tiempo(horas): </label>
-        <input name="horas" type="radio" value="0">
-        	<label for="radio">0</label>
-       	<input name="horas" type="radio" value="1"> 
-       		<label for="radio">1</label>
-       	<input name="horas" type="radio" value="2"> 
-       		<label for="radio">2</label><br>
-        <label>Tiempo(minutos): </label>
-        <input name="minutos" type="radio" value="0"> 
-        	<label for="radio">0</label>
-       	<input name="minutos" type="radio" value="15"> 
-       		<label for="radio">15</label>
-       	<input name="minutos" type="radio" value="30"> 
-       		<label for="radio">30</label>
-       	<input name="minutos" type="radio" value="45"> 
-       		<label for="radio">45</label> <br><br>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Pablo Carbonero Almellones">
+    <link rel="stylesheet" type="text/css" href="miestilo.css">
+</head>
+<body>
+  <a href="index.html">Volver</a></p><br><br>
+    <form action="https://lm.ciclo.iesnervion.es/" method="post">
+        <fieldset>
+            <label for="nombre">Nombre y apellidos: </label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="correo"><br><br>
+            <label>Momento: </label>
+            <input type="checkbox" name="momento[]" value="Desayuno"> Desayuno
+            <input type="checkbox" name="momento[]" value="Almuerzo"> Almuerzo
+            <input type="checkbox" name="momento[]" value="Merienda"> Merienda
+            <input type="checkbox" name="momento[]" value="Cena"> Cena<br><br>
+            <select multiple name="ingredientes" id="Ingredientes">
+                <optgroup label="Pescado">
+                    <option>Atún</option>
+                    <option>Mojarrita</option>
+                    <option>Bacalao</option>
+                </optgroup>
+                <optgroup label="Carne">
+                    <option>Pollo</option>
+                    <option>Ternera</option>
+                    <option>Cerdo</option>
+                </optgroup>
+                <optgroup label="Verdura">
+                    <option>Brocoli</option>
+                    <option>Pimiento</option>
+                    <option>Remolacha</option>
+                </optgroup>
+            </select><br><br>
+            <label>Tiempo (horas): </label>
+            <input type="radio" name="horas" value="0" id="radio0">
+            <label for="radio0">0</label>
+            <input type="radio" name="horas" value="1" id="radio1">
+            <label for="radio1">1</label>
+            <input type="radio" name="horas" value="2" id="radio2">
+            <label for="radio2">2</label><br>
+            <label>Tiempo (minutos): </label>
+            <input type="radio" name="minutos" value="0" id="radioM0">
+            <label for="radioM0">0</label>
+            <input type="radio" name="minutos" value="15" id="radioM15">
+            <label for="radioM15">15</label>
+            <input type="radio" name="minutos" value="30" id="radioM30">
+            <label for="radioM30">30</label>
+            <input type="radio" name="minutos" value="45" id="radioM45">
+            <label for="radioM45">45</label><br><br>
 
-       	<input type="file" id="image" name="image"><br><br>
-       	<input type="submit" name="enviar" value="Enviar">
-    </fieldset>
-</form>
+            <label for="image">Seleccionar imagen: </label>
+            <input type="file" id="image" name="imagen"><br><br>
+
+            <input type="submit" name="enviar" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>

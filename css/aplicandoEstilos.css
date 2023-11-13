@@ -1,0 +1,17 @@
+#p1{
+	font-style: italic;
+	font-family: Verdana;
+}
+#p2{
+	text-decoration: line-through;
+	text-decoration-color: red;
+	font-weight: bold;
+}
+#p3{
+	text-transform: uppercase;
+	text-shadow: -4px 3px 5px red;
+	font-size: 2em;
+}
+#p4{
+	text-align: center;
+}

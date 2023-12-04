@@ -1,0 +1,24 @@
+div{
+	width: 200px;
+	height: 200px;
+	border: solid 2px;
+	background-image: url("../images/patos.png");
+	background-size: 70px 70px;
+}
+.div1{
+	border-color: red;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.div2{
+	border-color: blue;
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+.div3{
+	border-color: green;
+	background-repeat: repeat-y;
+	background-position: right;
+}

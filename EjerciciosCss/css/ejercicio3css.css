@@ -1,0 +1,48 @@
+#t2{
+	width: 50%;
+	border: solid 1px;
+	margin-left: 25%; 
+}
+.celda{
+	border: solid 1px;
+	padding: 10px;
+}
+
+#div1{
+	border: solid 1px;
+	width: 50%;
+	margin-left: 25%; 
+	padding: 1px;
+}
+#div2{
+	border: solid 1px;
+	width: 50%;
+	margin-left: 25%; 
+	padding: 1px;
+}
+
+.row{
+	display:flex;
+	margin: 1px;
+}
+.col{
+	display: flex;
+	margin: 1px;
+}
+.cas{
+	display: inline-block;
+	border: solid 1px;
+	border-color: black;
+	margin: 1px;
+	padding: 10px;
+	width: 30%;
+}
+
+.cas2{
+	display: inline-block;
+	border: solid 1px;
+	border-color: black;
+	margin: 1px;
+	padding: 10px;
+	width: 50%;
+}

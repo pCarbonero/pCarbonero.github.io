@@ -1,0 +1,59 @@
+
+#contenedor{
+	margin: 2%;
+	text-align: center;
+	background-color: lightblue;
+	margin-top: 100px;
+}
+
+@keyframes anim{
+  0%{background-color:red}
+  25%  {background-color:yellow}
+  50%  {background-color:blue}
+  75%  {background-color:green}
+  100% {background-color:red}
+}
+
+
+nav{
+	border: solid 2px;
+	position: fixed;
+	width: 100%;
+	background-color: red;
+	top: 0;
+	animation-name: anim;
+	animation-duration: 4s;
+	text-decoration: none;
+	animation-iteration-count: infinite;
+}
+nav li{
+	width: 150px;
+	display: inline-block;
+	height: 30px;
+	border: solid 1px;
+	background-color: lightsalmon;
+}
+nav li :hover{
+	font-weight: bold;
+}
+section{
+	display: inline-table;
+	width: 40%;
+}
+@media screen and (max-width: 600px){
+	section{
+	display: table-table;
+	width: 100%;
+	}
+
+	#lm{
+		float: left;
+		width: 40%;
+		vertical-align: text-top;
+	}
+}
+
+#lm{
+	display: inline-block;
+	width: 100%;
+}

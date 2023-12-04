@@ -1,17 +1,65 @@
 #p1{
 	font-style: italic;
-	font-family: Verdana;
+	text-align: right;
 }
 #p2{
+	text-transform: uppercase;
 	text-decoration: line-through;
 	text-decoration-color: red;
-	font-weight: bold;
+	
 }
 #p3{
-	text-transform: uppercase;
-	text-shadow: -4px 3px 5px red;
+	font-family: Verdana;		
 	font-size: 2em;
 }
 #p4{
-	text-align: center;
+	font-weight: bold;
+	text-shadow: -4px 3px 5px red;
+}
+div{
+	display: table-cell;
+	width: 400px;
+	height: 200px;
+	border-radius: 10px;
+	padding: 5px;
+}
+div p{
+	font-weight: bold;
+}
+a{
+	color: white;
+	width: 100px;
+	height: 50px;
+}
+#div1{
+	background-color: greenyellow;
+
+}
+#div1 a{
+	display: inline-block; 
+}
+#div2{
+	background-color: lightblue;	
+}
+#div2 a{
+	display: block;
+}
+#div3{
+	background-color: violet;	
+}
+#div3 a{
+	display: inline-block; 
+}
+.rojo{
+	background-color: red;
+}
+.verde{
+	background-color: green;
+}
+.azul{
+	background-color: blue;
+}
+#div3 a:hover{
+	font-weight: bold;
+	color: black;
 }

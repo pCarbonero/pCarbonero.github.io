@@ -1,0 +1,23 @@
+.div1{
+	border: solid 2px;
+	width: 500px;
+	padding: 10px;
+	margin: 20px;
+	background-color: lightsalmon;
+}
+.float{
+	display: inline-flex;
+	border: solid 1px;
+	width: 15%;	
+	margin: 10px;
+	margin-left: 10%;
+	background-color: lightblue;
+}
+@media screen and  (max-width: 600px) {
+  .div1 {
+    background-color: lightblue;
+    padding: 5px;
+	margin: 10px;
+	font-size: 0.8em;
+  }
+}

@@ -25,6 +25,14 @@ div{
 	width: 100px;
 	height: 50px;
 }
+
+#div1{
+	display: flex;
+	margin-right: 10px;
+}
+
+
+
 .rojo{
 	background-color: red;
 

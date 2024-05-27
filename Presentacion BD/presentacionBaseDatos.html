@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Realtime Database Input</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Almacenar Datos en Realtime Database</h1>
+    <form id="data-form">
+        <input type="text" id="input-data" placeholder="Ingresa algo" required>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
+        import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-database.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyALHh1VA6OnTexbjmbbcRfkXnT3xC3UWM0",
+          authDomain: "presentacionbasedatos.firebaseapp.com",
+          databaseURL: "https://presentacionbasedatos-default-rtdb.europe-west1.firebasedatabase.app",
+          projectId: "presentacionbasedatos",
+          storageBucket: "presentacionbasedatos.appspot.com",
+          messagingSenderId: "838135923585",
+          appId: "1:838135923585:web:f1acc4d0aa7cc9a7f89e80"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+
+        // Handle form submission
+        document.getElementById('data-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const inputData = document.getElementById('input-data').value;
+            const dbRef = ref(database, 'datos');
+            push(dbRef, {
+                texto: inputData,
+                timestamp: new Date().toISOString()
+            })
+            .then(() => {
+                alert('Datos guardados exitosamente.');
+                document.getElementById('input-data').value = '';  // Clear the input field
+            })
+            .catch((error) => {
+                console.error('Error al guardar los datos: ', error);
+                alert('Error al guardar los datos: ' + error.message);
+            });
+        });
+    </script>
+</body>
+</html>
